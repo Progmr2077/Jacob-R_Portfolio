@@ -75,9 +75,25 @@ if (localStorage.getItem("theme") === "dark") {
   toggle.textContent = "☀️";
 }
 
+// Reflect initial state in aria-pressed
+toggle.setAttribute('aria-pressed', body.classList.contains('dark-mode') ? 'true' : 'false');
+
 toggle.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
   const dark = body.classList.contains("dark-mode");
   toggle.textContent = dark ? "☀️" : "🌙";
+  toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
   localStorage.setItem("theme", dark ? "dark" : "light");
+});
+
+// Smooth scrolling for in-page anchors
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const href = a.getAttribute('href');
+    if (href.length > 1) {
+      e.preventDefault();
+      const el = document.querySelector(href);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
 });

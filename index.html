@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jacob Rivera — Software developer portfolio. Projects in web, games, and automation." />
   <title>Jacob Rivera – Portfolio</title>
 
   <!-- Fonts -->
@@ -17,22 +18,33 @@
 </head>
 
 <body>
-  <header class="hero">
-    <div class="blob"></div>
+  <header class="hero" id="home">
+    <div class="blob" aria-hidden="true"></div>
 
-    <!-- FIX: Toggle placed here so it never moves -->
-    <button class="theme-toggle" aria-pressed="false" data-theme-toggle>
+    <button class="theme-toggle" aria-pressed="false" data-theme-toggle aria-label="Toggle dark mode">
       🌙
     </button>
 
     <div class="hero-inner">
-      <h1 class="title">Jacob Rivera</h1>
+      <div class="hero-content">
+        <h1 class="title">Jacob Rivera</h1>
+        <p class="lead">Software developer building fast, reliable, and user-centered experiences.</p>
 
-      <!-- Typewriter visible text -->
-      <p class="subtitle" id="subtitle">Software Developer</p>
+        <!-- Typewriter visible text -->
+        <p class="subtitle" id="subtitle">Software Developer</p>
+        <!-- Hidden measurement element (fixes header movement) -->
+        <span id="subtitle-measure" class="subtitle hidden"></span>
 
-      <!-- Hidden measurement element (fixes header movement) -->
-      <span id="subtitle-measure" class="subtitle hidden"></span>
+        <div class="hero-ctas">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="card hero-card">
+          <p class="muted">Available for hire · Open to collaborations</p>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -95,7 +107,7 @@
   <section class="section">
     <h2>Projects</h2>
 
-    <div class="project-grid">
+    <div class="project-grid" id="projects">
       <div class="project fade">
         <div class="thumb">
           <img src="Habit tracker.png" alt="Habit Tracker Screenshot" />
@@ -107,8 +119,8 @@
           LocalStorage — includes full dark/light mode support.
         </p>
         <div class="project-actions">
-          <a class="btn" href="https://progmr2077.github.io/Simple-Habit-Tracker-App/">Demo</a>
-          <a class="btn ghost" href="https://github.com/Progmr2077/Simple-Habit-Tracker-App">Source</a>
+          <a class="btn" href="https://progmr2077.github.io/Simple-Habit-Tracker-App/" target="_blank" rel="noopener noreferrer">Demo</a>
+          <a class="btn ghost" href="https://github.com/Progmr2077/Simple-Habit-Tracker-App" target="_blank" rel="noopener noreferrer">Source</a>
         </div>
       </div>
 
@@ -123,8 +135,8 @@
           full dark mode support.
         </p>
         <div class="project-actions">
-          <a class="btn" href="https://progmr2077.github.io/Expense-Tracking-App/">Demo</a>
-          <a class="btn ghost" href="https://github.com/Progmr2077/Expense-Tracking-App">Source</a>
+          <a class="btn" href="https://progmr2077.github.io/Expense-Tracking-App/" target="_blank" rel="noopener noreferrer">Demo</a>
+          <a class="btn ghost" href="https://github.com/Progmr2077/Expense-Tracking-App" target="_blank" rel="noopener noreferrer">Source</a>
         </div>
       </div>
 
@@ -138,8 +150,8 @@
           refresh, centered layout, and complete dark/light mode support.
         </p>
         <div class="project-actions">
-          <a class="btn" href="https://progmr2077.github.io/Random-Joke-App/">Demo</a>
-          <a class="btn ghost" href="https://github.com/Progmr2077/Random-Joke-App">Source</a>
+          <a class="btn" href="https://progmr2077.github.io/Random-Joke-App/" target="_blank" rel="noopener noreferrer">Demo</a>
+          <a class="btn ghost" href="https://github.com/Progmr2077/Random-Joke-App" target="_blank" rel="noopener noreferrer">Source</a>
         </div>
       </div>
 
@@ -154,8 +166,8 @@
           copy-to-clipboard functionality.
         </p>
         <div class="project-actions">
-          <a class="btn" href="https://progmr2077.github.io/Password-Generator/">Demo</a>
-          <a class="btn ghost" href="https://github.com/Progmr2077/Password-Generator">Source</a>
+          <a class="btn" href="https://progmr2077.github.io/Password-Generator/" target="_blank" rel="noopener noreferrer">Demo</a>
+          <a class="btn ghost" href="https://github.com/Progmr2077/Password-Generator" target="_blank" rel="noopener noreferrer">Source</a>
         </div>
       </div>
     </div>
