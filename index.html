@@ -1,195 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jacob Rivera – Portfolio</title>
 
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob Rivera – Portfolio</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Script -->
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header class="hero">
-      <div class="blob"></div>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 
-      <!-- FIX: Toggle placed here so it never moves -->
-      <button class="theme-toggle" aria-pressed="false" data-theme-toggle>
-        🌙
-      </button>
+  <!-- Script -->
+  <script src="script.js" defer></script>
+</head>
 
-      <div class="hero-inner">
-        <h1 class="title">Jacob Rivera</h1>
+<body>
+  <header class="hero">
+    <div class="blob"></div>
 
-        <!-- Typewriter visible text -->
-        <p class="subtitle" id="subtitle">Software Developer</p>
+    <!-- FIX: Toggle placed here so it never moves -->
+    <button class="theme-toggle" aria-pressed="false" data-theme-toggle>
+      🌙
+    </button>
 
-        <!-- Hidden measurement element (fixes header movement) -->
-        <span id="subtitle-measure" class="subtitle hidden"></span>
+    <div class="hero-inner">
+      <h1 class="title">Jacob Rivera</h1>
+
+      <!-- Typewriter visible text -->
+      <p class="subtitle" id="subtitle">Software Developer</p>
+
+      <!-- Hidden measurement element (fixes header movement) -->
+      <span id="subtitle-measure" class="subtitle hidden"></span>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <div class="card fade">
+      <p>
+        I’m a software developer based in Markham, ON, currently completing my Computer Programming diploma at Seneca
+        Polytechnic. I build fast, reliable, and user‑focused applications using JavaScript, Python, and modern web
+        technologies.
+
+        I’ve developed real-world projects — from responsive websites to automated workflows — and I love turning messy
+        problems into clean, efficient solutions. Whether I’m improving performance, fixing bugs, or designing new
+        features, I focus on writing code that’s simple, scalable, and easy to use.
+
+        I’m always learning, always building, and always looking for ways to make technology work better for people.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill fade">
+        <span>Python</span>
+        <div class="bar"><i style="width: 85%"></i></div>
       </div>
-    </header>
+      <div class="skill fade">
+        <span>HTML / CSS</span>
+        <div class="bar"><i style="width: 92%"></i></div>
+      </div>
+      <div class="skill fade">
+        <span>JavaScript / Node</span>
+        <div class="bar"><i style="width: 75%"></i></div>
+      </div>
+      <div class="skill fade">
+        <span>C / C++</span>
+        <div class="bar"><i style="width: 70%"></i></div>
+      </div>
+      <div class="skill fade">
+        <span>Oracle SQL</span>
+        <div class="bar"><i style="width: 80%"></i></div>
+      </div>
+      <div class="skill fade">
+        <span>Bootstrap</span>
+        <div class="bar"><i style="width: 85%"></i></div>
+      </div>
+      <div class="skill fade">
+        <span>Git & GitHub</span>
+        <div class="bar"><i style="width: 88%"></i></div>
+      </div>
+      <div class="skill fade">
+        <span>Unreal Engine</span>
+        <div class="bar"><i style="width: 60%"></i></div>
+      </div>
+    </div>
+  </section>
 
-    <section class="section">
-      <h2>About Me</h2>
-      <div class="card fade">
+  <section class="section">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+      <div class="project fade">
+        <div class="thumb">
+          <img src="Habit tracker.png" alt="Habit Tracker Screenshot" />
+        </div>
+        <h3>Habit Tracker</h3>
         <p>
-          I'm a passionate software developer currently studying Computer
-          Programming and Analysis. I love building responsive applications,
-          solving problems, and constantly improving my skills.
+          A productivity tool where you can add habits, track weekly activity,
+          view monthly calendars, see progress bars, and store data using
+          LocalStorage — includes full dark/light mode support.
         </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Technical Skills</h2>
-
-      <div class="skills-grid">
-        <div class="skill fade">
-          <span>Python</span>
-          <div class="bar"><i style="width: 85%"></i></div>
-        </div>
-        <div class="skill fade">
-          <span>HTML / CSS</span>
-          <div class="bar"><i style="width: 92%"></i></div>
-        </div>
-        <div class="skill fade">
-          <span>JavaScript / Node</span>
-          <div class="bar"><i style="width: 75%"></i></div>
-        </div>
-        <div class="skill fade">
-          <span>C / C++</span>
-          <div class="bar"><i style="width: 70%"></i></div>
-        </div>
-        <div class="skill fade">
-          <span>Oracle SQL</span>
-          <div class="bar"><i style="width: 80%"></i></div>
-        </div>
-        <div class="skill fade">
-          <span>Bootstrap</span>
-          <div class="bar"><i style="width: 85%"></i></div>
-        </div>
-        <div class="skill fade">
-          <span>Git & GitHub</span>
-          <div class="bar"><i style="width: 88%"></i></div>
-        </div>
-        <div class="skill fade">
-          <span>Unreal Engine</span>
-          <div class="bar"><i style="width: 60%"></i></div>
+        <div class="project-actions">
+          <a class="btn" href="https://progmr2077.github.io/Simple-Habit-Tracker-App/">Demo</a>
+          <a class="btn ghost" href="https://github.com/Progmr2077/Simple-Habit-Tracker-App">Source</a>
         </div>
       </div>
-    </section>
 
-    <section class="section">
-      <h2>Projects</h2>
-
-      <div class="project-grid">
-        <div class="project fade">
-          <div class="thumb">
-            <img src="Habit tracker.png" alt="Habit Tracker Screenshot" />
-          </div>
-          <h3>Habit Tracker</h3>
-          <p>
-            A productivity tool where you can add habits, track weekly activity,
-            view monthly calendars, see progress bars, and store data using
-            LocalStorage — includes full dark/light mode support.
-          </p>
-          <div class="project-actions">
-            <a class="btn" href="https://progmr2077.github.io/Simple-Habit-Tracker-App/">Demo</a>
-            <a
-              class="btn ghost"
-              href="https://github.com/Progmr2077/Simple-Habit-Tracker-App"
-              >Source</a
-            >
-          </div>
+      <div class="project fade">
+        <div class="thumb">
+          <img src="Expense tracker.png" alt="Expense Tracker Screenshot" />
         </div>
-
-        <div class="project fade">
-          <div class="thumb">
-            <img src="Expense tracker.png" alt="Expense Tracker Screenshot" />
-          </div>
-          <h3>Expense Tracker</h3>
-          <p>
-            A clean financial tracker with editable categories, random-color pie
-            chart, income/expense totals, custom categories, placeholders, and
-            full dark mode support.
-          </p>
-          <div class="project-actions">
-            <a class="btn" href="https://progmr2077.github.io/Expense-Tracking-App/">Demo</a>
-            <a
-              class="btn ghost"
-              href="https://github.com/Progmr2077/Expense-Tracking-App"
-              >Source</a
-            >
-          </div>
-        </div>
-
-        <div class="project fade">
-          <div class="thumb">
-            <img
-              src="Joke Generator.png"
-              alt="Random Joke Generator Screenshot"
-            />
-          </div>
-          <h3>Random Joke Generator</h3>
-          <p>
-            Fetches jokes from JokeAPI with smooth fade animations, instant
-            refresh, centered layout, and complete dark/light mode support.
-          </p>
-          <div class="project-actions">
-            <a class="btn" href="https://progmr2077.github.io/Random-Joke-App/">Demo</a>
-            <a
-              class="btn ghost"
-              href="https://github.com/Progmr2077/Random-Joke-App"
-              >Source</a
-            >
-          </div>
-        </div>
-
-        <div class="project fade">
-          <div class="thumb">
-            <img
-              src="Password Generator.png"
-              alt="Password Generator Screenshot"
-            />
-          </div>
-          <h3>Password Generator</h3>
-          <p>
-            Fully customizable password creator with length slider, character
-            toggles, strength meter, responsive layout, and reliable
-            copy-to-clipboard functionality.
-          </p>
-          <div class="project-actions">
-            <a class="btn" href="https://progmr2077.github.io/Password-Generator/">Demo</a>
-            <a
-              class="btn ghost"
-              href="https://github.com/Progmr2077/Password-Generator"
-              >Source</a
-            >
-          </div>
+        <h3>Expense Tracker</h3>
+        <p>
+          A clean financial tracker with editable categories, random-color pie
+          chart, income/expense totals, custom categories, placeholders, and
+          full dark mode support.
+        </p>
+        <div class="project-actions">
+          <a class="btn" href="https://progmr2077.github.io/Expense-Tracking-App/">Demo</a>
+          <a class="btn ghost" href="https://github.com/Progmr2077/Expense-Tracking-App">Source</a>
         </div>
       </div>
-    </section>
 
-    <section class="contact fade" id="contact">
-      <h2>Contact</h2>
-      <p>I'm open to work, collaborations, and new opportunities.</p>
-      <div class="contact-links">
-        <a href="mailto:jacobriv111@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/jacob-rivera-562802368/"
-          >LinkedIn</a
-        >
-        <a href="https://github.com/Progmr2077">GitHub</a>
+      <div class="project fade">
+        <div class="thumb">
+          <img src="Joke Generator.png" alt="Random Joke Generator Screenshot" />
+        </div>
+        <h3>Random Joke Generator</h3>
+        <p>
+          Fetches jokes from JokeAPI with smooth fade animations, instant
+          refresh, centered layout, and complete dark/light mode support.
+        </p>
+        <div class="project-actions">
+          <a class="btn" href="https://progmr2077.github.io/Random-Joke-App/">Demo</a>
+          <a class="btn ghost" href="https://github.com/Progmr2077/Random-Joke-App">Source</a>
+        </div>
       </div>
-    </section>
 
-    <footer>© 2025 Jacob Rivera</footer>
-  </body>
+      <div class="project fade">
+        <div class="thumb">
+          <img src="Password Generator.png" alt="Password Generator Screenshot" />
+        </div>
+        <h3>Password Generator</h3>
+        <p>
+          Fully customizable password creator with length slider, character
+          toggles, strength meter, responsive layout, and reliable
+          copy-to-clipboard functionality.
+        </p>
+        <div class="project-actions">
+          <a class="btn" href="https://progmr2077.github.io/Password-Generator/">Demo</a>
+          <a class="btn ghost" href="https://github.com/Progmr2077/Password-Generator">Source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact fade" id="contact">
+    <h2>Contact</h2>
+    <p>I'm open to work, collaborations, and new opportunities.</p>
+    <div class="contact-links">
+      <a href="mailto:jacobriv111@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/jacob-rivera-562802368/">LinkedIn</a>
+      <a href="https://github.com/Progmr2077">GitHub</a>
+    </div>
+  </section>
+
+  <footer>© 2025 Jacob Rivera</footer>
+</body>
+
 </html>
