@@ -1,189 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jacob Rivera — Software developer portfolio. Projects in web, games, and automation." />
-  <title>Jacob Rivera – Portfolio</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Script -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jacob Rivera — software developer portfolio featuring web applications, problem-solving projects, technical skills, and professional experience.">
+  <meta name="theme-color" content="#0a0d14">
+  <title>Jacob Rivera | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
-  <header class="hero" id="home">
-    <div class="blob" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" id="progress"></div>
 
-    <button class="theme-toggle" aria-pressed="false" data-theme-toggle aria-label="Toggle dark mode">
-      🌙
-    </button>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Jacob Rivera home">
+      <span class="brand-mark">JR</span>
+      <span>Jacob Rivera</span>
+    </a>
 
-    <div class="hero-inner">
-      <div class="hero-content">
-        <h1 class="title">Jacob Rivera</h1>
-        <p class="lead">Software developer building fast, reliable, and user-centered experiences.</p>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-        <!-- Typewriter visible text -->
-        <p class="subtitle" id="subtitle">Software Developer</p>
-        <!-- Hidden measurement element (fixes header movement) -->
-        <span id="subtitle-measure" class="subtitle hidden"></span>
-
-        <div class="hero-ctas">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn ghost" href="#contact">Contact</a>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="card hero-card">
-          <p class="muted">Available for hire · Open to collaborations</p>
-        </div>
-      </div>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme">☼</button>
+      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
-  <section class="section">
-    <h2>About Me</h2>
-    <div class="card fade">
-      <p>
-        I’m a software developer based in Markham, ON, currently completing my Computer Programming diploma at Seneca
-        Polytechnic. I build fast, reliable, and user‑focused applications using JavaScript, Python, and modern web
-        technologies.
-
-        I’ve developed real-world projects — from responsive websites to automated workflows — and I love turning messy
-        problems into clean, efficient solutions. Whether I’m improving performance, fixing bugs, or designing new
-        features, I focus on writing code that’s simple, scalable, and easy to use.
-
-        I’m always learning, always building, and always looking for ways to make technology work better for people.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Technical Skills</h2>
-
-    <div class="skills-grid">
-      <div class="skill fade">
-        <span>Python</span>
-        <div class="bar"><i style="width: 85%"></i></div>
-      </div>
-      <div class="skill fade">
-        <span>HTML / CSS</span>
-        <div class="bar"><i style="width: 92%"></i></div>
-      </div>
-      <div class="skill fade">
-        <span>JavaScript / Node</span>
-        <div class="bar"><i style="width: 75%"></i></div>
-      </div>
-      <div class="skill fade">
-        <span>C / C++</span>
-        <div class="bar"><i style="width: 70%"></i></div>
-      </div>
-      <div class="skill fade">
-        <span>Oracle SQL</span>
-        <div class="bar"><i style="width: 80%"></i></div>
-      </div>
-      <div class="skill fade">
-        <span>Bootstrap</span>
-        <div class="bar"><i style="width: 85%"></i></div>
-      </div>
-      <div class="skill fade">
-        <span>Git & GitHub</span>
-        <div class="bar"><i style="width: 88%"></i></div>
-      </div>
-      <div class="skill fade">
-        <span>Unreal Engine</span>
-        <div class="bar"><i style="width: 60%"></i></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Projects</h2>
-
-    <div class="project-grid" id="projects">
-      <div class="project fade">
-        <div class="thumb">
-          <img src="Habit tracker.png" alt="Habit Tracker Screenshot" />
-        </div>
-        <h3>Habit Tracker</h3>
-        <p>
-          A productivity tool where you can add habits, track weekly activity,
-          view monthly calendars, see progress bars, and store data using
-          LocalStorage — includes full dark/light mode support.
+  <main id="home">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> Open to opportunities & collaborations</div>
+        <p class="kicker">SOFTWARE DEVELOPER <span>/</span> BUILDER</p>
+        <h1>Turning ideas into <span class="gradient-text">useful software.</span></h1>
+        <p class="hero-description">
+          I build practical, user-focused applications and enjoy solving problems from the first idea through implementation, testing, and refinement.
         </p>
-        <div class="project-actions">
-          <a class="btn" href="https://progmr2077.github.io/Simple-Habit-Tracker-App/" target="_blank" rel="noopener noreferrer">Demo</a>
-          <a class="btn ghost" href="https://github.com/Progmr2077/Simple-Habit-Tracker-App" target="_blank" rel="noopener noreferrer">Source</a>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">Explore my work <span>↘</span></a>
+          <a class="btn btn-secondary" href="#contact">Let's connect</a>
+        </div>
+
+        <div class="hero-meta">
+          <span>Markham, Ontario</span>
+          <span class="dot">•</span>
+          <span>JavaScript · Python · C/C++ · Kotlin</span>
         </div>
       </div>
 
-      <div class="project fade">
-        <div class="thumb">
-          <img src="Expense tracker.png" alt="Expense Tracker Screenshot" />
+      <div class="hero-visual reveal">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="terminal-dots"><i></i><i></i><i></i></span>
+            <span class="mono">jacob@portfolio ~</span>
+            <span class="terminal-live">LIVE</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="output">Jacob Rivera</p>
+            <p><span class="prompt">$</span> focus</p>
+            <p class="output">Build. Test. Improve. Repeat.</p>
+            <p><span class="prompt">$</span> current_stack</p>
+            <p class="output">HTML/CSS · JavaScript · Python</p>
+            <p><span class="prompt">$</span> status</p>
+            <p class="output success">Available for new challenges<span class="cursor">_</span></p>
+          </div>
         </div>
-        <h3>Expense Tracker</h3>
-        <p>
-          A clean financial tracker with editable categories, random-color pie
-          chart, income/expense totals, custom categories, placeholders, and
-          full dark mode support.
-        </p>
-        <div class="project-actions">
-          <a class="btn" href="https://progmr2077.github.io/Expense-Tracking-App/" target="_blank" rel="noopener noreferrer">Demo</a>
-          <a class="btn ghost" href="https://github.com/Progmr2077/Expense-Tracking-App" target="_blank" rel="noopener noreferrer">Source</a>
+        <div class="floating-card card-one"><span>04</span><small>featured builds</small></div>
+        <div class="floating-card card-two"><span>∞</span><small>curiosity</small></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Technology list">
+      <div class="marquee-track">
+        <span>JAVASCRIPT</span><b>✦</b><span>PYTHON</span><b>✦</b><span>HTML / CSS</span><b>✦</b><span>NODE.JS</span><b>✦</b><span>SQL / MYSQL</span><b>✦</b><span>KOTLIN</span><b>✦</b><span>GIT / GITHUB</span><b>✦</b>
+        <span>JAVASCRIPT</span><b>✦</b><span>PYTHON</span><b>✦</b><span>HTML / CSS</span><b>✦</b><span>NODE.JS</span><b>✦</b><span>SQL / MYSQL</span><b>✦</b><span>KOTLIN</span><b>✦</b><span>GIT / GITHUB</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="section shell" id="work">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">01 / SELECTED WORK</p>
+          <h2>Things I've built.</h2>
+        </div>
+        <p>Small applications, real functionality, and a focus on making interfaces clear and enjoyable to use.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project featured reveal">
+          <div class="project-image">
+            <img src="Habit tracker.png" alt="Habit Tracker application screenshot" loading="lazy">
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>WEB APP</span><span>JAVASCRIPT</span></div>
+            <h3>Habit Tracker</h3>
+            <p>Productivity app for creating habits, tracking activity, viewing progress, and persisting data locally.</p>
+            <div class="tags"><span>LocalStorage</span><span>Responsive UI</span><span>Dark mode</span></div>
+            <div class="project-links">
+              <a href="https://progmr2077.github.io/Simple-Habit-Tracker-App/" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              <a href="https://github.com/Progmr2077/Simple-Habit-Tracker-App" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-image">
+            <img src="Expense tracker.png" alt="Expense Tracker application screenshot" loading="lazy">
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>WEB APP</span><span>JAVASCRIPT</span></div>
+            <h3>Expense Tracker</h3>
+            <p>Financial tracking interface with categorized spending, income and expense totals, custom categories, and visual summaries.</p>
+            <div class="tags"><span>Data handling</span><span>Charts</span><span>Dark mode</span></div>
+            <div class="project-links">
+              <a href="https://progmr2077.github.io/Expense-Tracking-App/" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              <a href="https://github.com/Progmr2077/Expense-Tracking-App" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-image">
+            <img src="Joke Generator.png" alt="Random Joke Generator application screenshot" loading="lazy">
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>API PROJECT</span><span>JAVASCRIPT</span></div>
+            <h3>Random Joke Generator</h3>
+            <p>Lightweight API-powered application demonstrating asynchronous JavaScript, external data retrieval, and responsive interaction.</p>
+            <div class="tags"><span>REST API</span><span>Async JS</span><span>UX states</span></div>
+            <div class="project-links">
+              <a href="https://progmr2077.github.io/Random-Joke-App/" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              <a href="https://github.com/Progmr2077/Random-Joke-App" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-image">
+            <img src="Password Generator.png" alt="Password Generator application screenshot" loading="lazy">
+            <span class="project-number">04</span>
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>UTILITY</span><span>JAVASCRIPT</span></div>
+            <h3>Password Generator</h3>
+            <p>Customizable password utility with user-defined criteria, strength feedback, responsive layout, and copy-to-clipboard support.</p>
+            <div class="tags"><span>DOM logic</span><span>Validation</span><span>Clipboard API</span></div>
+            <div class="project-links">
+              <a href="https://progmr2077.github.io/Password-Generator/" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              <a href="https://github.com/Progmr2077/Password-Generator" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="skills">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">02 / TOOLKIT</p>
+          <h2>What I work with.</h2>
+        </div>
+        <p>A practical toolkit across software development, databases, testing, mobile development, and version control.</p>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skill-panel reveal">
+          <span class="skill-icon">&lt;/&gt;</span>
+          <h3>Development</h3>
+          <div class="skill-list">
+            <span>JavaScript</span><span>Python</span><span>C</span><span>C++</span><span>Kotlin</span><span>HTML</span><span>CSS</span><span>Node.js</span>
+          </div>
+        </div>
+        <div class="skill-panel reveal">
+          <span class="skill-icon">◫</span>
+          <h3>Data & APIs</h3>
+          <div class="skill-list">
+            <span>SQL / MySQL</span><span>NoSQL</span><span>REST APIs</span><span>Database design</span><span>Data handling</span>
+          </div>
+        </div>
+        <div class="skill-panel reveal">
+          <span class="skill-icon">⌘</span>
+          <h3>Tools & Quality</h3>
+          <div class="skill-list">
+            <span>Git / GitHub</span><span>VS Code</span><span>Android Studio</span><span>Selenium IDE</span><span>Testing</span><span>Debugging</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell about-grid" id="about">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">03 / ABOUT</p>
+          <h2>More than code.</h2>
+        </div>
+      </div>
+      <div class="about-copy reveal">
+        <p class="large">I like taking something that feels complicated and making it feel simple.</p>
+        <p>My background combines software development with customer service, operations, teamwork, and community support. That mix has shaped how I approach technology: understand the problem, communicate clearly, build thoughtfully, test what you made, and keep improving it.</p>
+        <p>I'm especially interested in opportunities where I can keep growing as a developer while contributing to products that people actually use.</p>
+      </div>
+      <div class="principles reveal">
+        <div><strong>01</strong><span>Problem first</span><p>Understand what needs to be solved before jumping into implementation.</p></div>
+        <div><strong>02</strong><span>Build clearly</span><p>Prefer readable, maintainable solutions over unnecessary complexity.</p></div>
+        <div><strong>03</strong><span>Keep improving</span><p>Use testing, feedback, and iteration to turn a good build into a better one.</p></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="experience">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">04 / EXPERIENCE</p>
+          <h2>Where I've contributed.</h2>
         </div>
       </div>
 
-      <div class="project fade">
-        <div class="thumb">
-          <img src="Joke Generator.png" alt="Random Joke Generator Screenshot" />
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2021 — 2023</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Software Developer</h3>
+            <p class="company">Skymantle Technologies · Remote</p>
+            <ul>
+              <li>Developed and maintained software applications and supported feature improvements in a team environment.</li>
+              <li>Troubleshot application issues, reviewed errors, tested changes, and helped improve reliability and usability.</li>
+              <li>Collaborated through code review, testing, implementation, and technical documentation.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2025 — Present</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Volunteer Facilitator</h3>
+            <p class="company">Salvation Army Markham Ministries · Markham, ON</p>
+            <ul>
+              <li>Facilitate weekly English conversation circles for groups of 10+ newcomers.</li>
+              <li>Use patience, active listening, organization, and clear communication to support participants.</li>
+              <li>Adapt communication to different needs while creating a welcoming environment.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2018 — 2019</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Customer Service Associate</h3>
+            <p class="company">Toys"R"Us · Markham, ON</p>
+            <ul>
+              <li>Assisted customers with purchases, questions, concerns, returns, and product-related needs.</li>
+              <li>Supported merchandise presentation and stock-related tasks in a high-volume retail environment.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell education reveal">
+      <div class="education-card">
+        <div>
+          <p class="kicker">EDUCATION</p>
+          <h2>Bachelor of Computer Science</h2>
+          <p>Seneca Polytechnic · Toronto, Ontario</p>
         </div>
-        <h3>Random Joke Generator</h3>
-        <p>
-          Fetches jokes from JokeAPI with smooth fade animations, instant
-          refresh, centered layout, and complete dark/light mode support.
-        </p>
-        <div class="project-actions">
-          <a class="btn" href="https://progmr2077.github.io/Random-Joke-App/" target="_blank" rel="noopener noreferrer">Demo</a>
-          <a class="btn ghost" href="https://github.com/Progmr2077/Random-Joke-App" target="_blank" rel="noopener noreferrer">Source</a>
+        <div class="education-badge">CS</div>
+      </div>
+    </section>
+
+    <section class="contact-section shell" id="contact">
+      <div class="contact-card reveal">
+        <p class="kicker">05 / CONTACT</p>
+        <h2>Have a problem worth solving?</h2>
+        <p>I'm open to software opportunities, collaborations, and conversations about interesting projects.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:jacobriv111@gmail.com">Email me ↗</a>
+          <a class="btn btn-secondary" href="https://github.com/Progmr2077?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/jacob-rivera-562802368/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="project fade">
-        <div class="thumb">
-          <img src="Password Generator.png" alt="Password Generator Screenshot" />
-        </div>
-        <h3>Password Generator</h3>
-        <p>
-          Fully customizable password creator with length slider, character
-          toggles, strength meter, responsive layout, and reliable
-          copy-to-clipboard functionality.
-        </p>
-        <div class="project-actions">
-          <a class="btn" href="https://progmr2077.github.io/Password-Generator/" target="_blank" rel="noopener noreferrer">Demo</a>
-          <a class="btn ghost" href="https://github.com/Progmr2077/Password-Generator" target="_blank" rel="noopener noreferrer">Source</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <footer class="site-footer shell">
+    <span>© <span id="year"></span> Jacob Rivera</span>
+    <span class="mono">Built with HTML · CSS · JavaScript</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
 
-  <section class="contact fade" id="contact">
-    <h2>Contact</h2>
-    <p>I'm open to work, collaborations, and new opportunities.</p>
-    <div class="contact-links">
-      <a href="mailto:jacobriv111@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/jacob-rivera-562802368/">LinkedIn</a>
-      <a href="https://github.com/Progmr2077?tab=repositories">GitHub</a>
-    </div>
-  </section>
-
-  <footer>© 2025 Jacob Rivera</footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
-
 </html>
