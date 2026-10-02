@@ -112,9 +112,9 @@ img { max-width: 100%; display: block; }
 .card-two { bottom:10%; left:0; }
 
 .marquee { overflow:hidden; border-block:1px solid var(--line); background:var(--surface); }
-.marquee-track { width:max-content; display:flex; align-items:center; gap:26px; padding:16px 0; color:var(--muted-2); font:500 10px "DM Mono",monospace; letter-spacing:.14em; animation:marquee 75s linear infinite !important; }
+.marquee-track { width:max-content; display:flex; align-items:center; gap:26px; padding:16px 0; color:var(--muted-2); font:500 10px "DM Mono",monospace; letter-spacing:.14em; animation:marquee 20s linear infinite; will-change:transform; backface-visibility:hidden; }
 .marquee b { color:var(--accent); font-size:10px; }
-@keyframes marquee { to { transform:translateX(-50%); } }
+@keyframes marquee { to { transform:translate3d(-50%,0,0); } }
 
 .section { padding:125px 0 0; }
 .section-heading { display:grid; grid-template-columns:1fr 360px; gap:50px; align-items:end; margin-bottom:44px; }
