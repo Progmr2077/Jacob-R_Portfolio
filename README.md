@@ -1,5 +1,5 @@
 Jacob Rivera — Portfolio
-Welcome to my portfolio repository! I am a Computer Programming and Analysis student at Seneca Polytechnic with hands-on experience in Python, Oracle SQL, C++, JavaScript, Node.js, and responsive web development. This portfolio highlights my academic projects, personal builds, and technical skills.
+Welcome to my portfolio repository! I am a Computer Programming student at Seneca Polytechnic with hands-on experience in Python, Oracle SQL, C++, JavaScript, Node.js, and responsive web development. This portfolio highlights my academic projects, personal builds, and technical skills.
 
 About Me
 Currently studying Computer Programming and Analysis (2023–2026) at Seneca Polytechnic.
