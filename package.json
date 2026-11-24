@@ -1,0 +1,8 @@
+{
+  "name": "jacob-r-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "scripts": {
+    "dev": "npx --yes serve -l 3000 --no-clipboard"
+  }
+}
